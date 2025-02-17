@@ -1,7 +1,9 @@
 @extends('layouts.LayoutExo')
 
 @section('title', 'Contact')
-@section('GrandTitre','Contactez Nous')
+@section('GrandTitre')
+    <x-first-component/>
+@endsection
 
 @section('Contenu')
 <h2> Ceci est le contenu de ma page Contact </h2>

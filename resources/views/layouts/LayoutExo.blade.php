@@ -2,18 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>@yield('title')</title>
 </head>
 <body>
     <header>
         <h1>@yield('GrandTitre')</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url('/accueil')}}">Accueil</a></li>
-                <li><a href="{{ url('/about')}}">À propos</a></li>
-                <li><a href="{{ url('/contact')}}">Contact</a></li>
-            </ul>
-        </nav>
     </header>
     <main>@yield('Contenu')
     </main>

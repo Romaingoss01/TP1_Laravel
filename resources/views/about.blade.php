@@ -1,7 +1,9 @@
 @extends('layouts.LayoutExo')
 
 @section('title', 'About')
-@section('GrandTitre','A propos de nous')
+@section('GrandTitre')
+    <x-first-component/>
+@endsection
 
 @section('Contenu')
 <h2> Ceci est le contenu de ma page About </h2>
