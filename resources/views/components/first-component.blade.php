@@ -31,7 +31,9 @@
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <x-color-menu-nav-bar/>
+              <x-color-menu-nav-bar href="/accueil" aria-current="page" :active="request()->is('accueil')">Accueil</x-color-menu-nav-bar>
+              <x-color-menu-nav-bar href="/about" :active="request()->is('about')">A propos</x-color-menu-nav-bar>
+              <x-color-menu-nav-bar href="/contact" :active="request()->is('contact')">Contact</x-color-menu-nav-bar>
             </div>
           </div>
         </div>
